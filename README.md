@@ -40,44 +40,29 @@ This project goes beyond simple scripting by providing a **three-page interactiv
 * **Visualization:** Plotly Express
 
 ---
+## 📁 Project Structure
+app.py: Main Multi-page Streamlit Application
 
-## 📁 Repository Structure
-```text
-├── app.py              # Main Multi-page Streamlit Application
-├── train_model.py      # Script used for model training and balancing
-├── best_model.pk1      # Serialized Random Forest Model
-├── model_columns.pk1   # Serialized Feature Index (ensures input alignment)
-├── requirements.txt    # Project dependencies
-├── adult 3.csv         # UCI Census Dataset
-└── README.md           # Professional Documentation
-----
+best_model.pk1: Serialized Random Forest Model
 
-## Installation & Usage
+model_columns.pk1: Serialized Feature Index (ensuring input alignment)
 
+requirements.txt: Project dependencies
+
+adult 3.csv: UCI Census Dataset
+
+## ⚙️ Installation & Usage
 Clone the Project:
+git clone https://github.com/YOUR_USERNAME/salary-prediction-app.git
 
-Bash
-git clone [https://github.com/YOUR_USERNAME/salary-prediction-app.git](https://github.com/YOUR_USERNAME/salary-prediction-app.git)
-cd salary-prediction-app
 Install Libraries:
-
-Bash
 pip install -r requirements.txt
-Run Locally:
 
-Bash
+Run Locally:
 streamlit run app.py
-🧠 Model Logic & Optimization
+
+## 🧠 Model Logic & Optimization
 To combat the common "Class Imbalance" issue in census data (where ≤50K earners are the majority), this model was trained using Balanced Class Weights. This ensures that high-earning profiles are identified with significantly higher sensitivity than standard models.
 
-🤝 Contact
-Developed by Akalya Looking for data-driven roles and collaboration.
-
-
-
-
-
-2.  **Edit** the parts in brackets, like `[Your Name]`, `YOUR_USERNAME`, and `[INSERT LINK HERE]`.
-3.  **Add a Screenshot:** If you can, take a screenshot of your working app and upload it to your GitHub repo, then link it in the README. It makes the project look 10x more impressive!
-
-**Would you like me to show you how to add a "License" file to your repository to make it officially Open Source?**
+## 🤝 Contact
+Developed by Akalya, Looking for data-driven roles and collaboration.
